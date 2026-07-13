@@ -1,0 +1,13 @@
+board representation  2d matrix grid representation 
+inplaced state and backtracking 
+sliding bses fixed  new generation 
+type a -> sliding pieces 
+type b-> jumping pieces
+pseudo legal vs legal filtering 
+heuristic stastics board evaluation 
+dept first search minmax search tree  
+alph beta pruning
+move ordering heuristics
+zobrist hashing also known as bitwise finger printing 
+transportation 
+algebraic eq - > matrix equation 
