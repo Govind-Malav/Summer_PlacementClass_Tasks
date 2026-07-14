@@ -7,7 +7,6 @@ def card_shuffle(cards):
         shuffled.append(first_half[i])
         shuffled.append(second_half[i])
     return shuffled
-
 n=int(input("Enter the number of cardcs: "))
 cards=[]
 print("Enter", 2* n,"elements:")
