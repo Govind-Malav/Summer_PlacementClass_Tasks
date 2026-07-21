@@ -169,7 +169,6 @@ for title, query in queries.items():
         print("(No rows)")
     print()
 
-# Q10 is handled separately because SQLite may or may not support window functions
 print("=== Q10 ===")
 q10_sql = """
 SELECT
@@ -185,7 +184,6 @@ cursor.execute(q10_sql)
 rows = cursor.fetchall()
 
 if sqlite3.sqlite_version >= "3.25.0":
-    # Try window function version if supported
     q10_window = """
     SELECT
         Cuisine,
@@ -213,7 +211,6 @@ if sqlite3.sqlite_version >= "3.25.0":
     for row in rows:
         print(row)
 else:
-    # Fallback ranking in Python
     columns = ["Cuisine", "RestaurantName", "OrderCount", "RestaurantRank"]
     print("Columns:", columns)
     grouped = {}
